@@ -4,7 +4,7 @@ const supabase = createClient('https://wbqhbuxxzypoakzmslxi.supabase.co', 'eyJhb
 const learningExperiences = ref([])
 
 async function getLearingExperiences() {
-  const { data } = await supabase.from('learningExperiences').select()
+  const { data } = await supabase.from('LearningExperiences').select()
   learningExperiences.value = data
 }
 
